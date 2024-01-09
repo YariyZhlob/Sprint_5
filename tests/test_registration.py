@@ -70,6 +70,3 @@ class TestRegistration:
         driver.find_element(*Locators.LOGIN_PAGE_ENTER_BUTTON).click()
 
         assert driver.find_element(*Locators.WRONG_PASSWORD_INSCRIPTION).text == "Некорректный пароль"
-
-
-

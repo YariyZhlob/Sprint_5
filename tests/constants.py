@@ -12,5 +12,3 @@ class Constants:
     REGISTRATION_PAGE_URL = "https://stellarburgers.nomoreparties.site/register"
     RECOVER_PASSWORD_PAGE = "https://stellarburgers.nomoreparties.site/forgot-password"
     ACCOUNT_PROFILE_PAGE = "https://stellarburgers.nomoreparties.site/account/profile"
-
-

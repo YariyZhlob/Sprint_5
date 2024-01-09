@@ -48,13 +48,3 @@ class Locators:
     FILLINGS_BUTTON = (By.XPATH, '//span[@class="text text_type_main-default" and text()="Начинки"]')
     #Надпись Начинки
     FILLINGS_INSCRIPTION = (By.XPATH, '//h2[@class="text text_type_main-medium mb-6 mt-10"][3]')
-
-
-
-
-
-
-
-
-
-
