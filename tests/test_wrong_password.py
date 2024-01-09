@@ -1,3 +1,4 @@
+"""Проверка ошибки ввода некорректного пароля"""
 from selenium import webdriver
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
@@ -25,3 +26,5 @@ def test_wrong_password():
     driver.find_element(*Locators.LOGIN_PAGE_ENTER_BUTTON).click()
 
     assert driver.find_element(*Locators.WRONG_PASSWORD_INSCRIPTION).text == "Некорректный пароль"
+
+    driver.quit()

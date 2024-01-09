@@ -1,10 +1,11 @@
+"""Проверка успешной регистрации"""
 from selenium import webdriver
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from constants import Constants
 from locators import Locators
 
-def test_success_ful_registration():
+def test_successful_registration():
     driver = webdriver.Chrome()
     driver.get(Constants.URL)
 
@@ -47,4 +48,7 @@ def test_success_ful_registration():
     # Ожидание загрузки страницы
     WebDriverWait(driver, 3).until(EC.url_to_be(Constants.URL))
 
+    # Проверка наличия кнопки Оформить заказ
     assert driver.find_element(*Locators.MAKE_ORDER_BUTTON).text == "Оформить заказ"
+
+    driver.quit()
