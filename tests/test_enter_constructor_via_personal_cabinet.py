@@ -5,7 +5,7 @@ from constants import Constants
 from locators import Locators
 
 class TestEnterConstructorViaPersonalCabinet:
-    def test_enter_constructor_via_personal_cabinet(self,driver):
+    def test_enter_constructor_via_personal_cabinet(self, driver):
         driver.get(Constants.URL)
 
         # Клик по кнопке Личный кабинет

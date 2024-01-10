@@ -48,3 +48,10 @@ class Locators:
     FILLINGS_BUTTON = (By.XPATH, '//span[@class="text text_type_main-default" and text()="Начинки"]')
     #Надпись Начинки
     FILLINGS_INSCRIPTION = (By.XPATH, '//h2[@class="text text_type_main-medium mb-6 mt-10"][3]')
+    #Элемент для надписи Current в разделе Соусы
+    SAUCES_CURRENT_INSCRIPTION = (By.XPATH, '//span[@class="text text_type_main-default" and text()="Соусы"]/parent::div')
+    #Элемент для надписи Current в разделе Булки
+    BUNS_CURRENT_INSCRIPTION = (By.XPATH, '//span[@class="text text_type_main-default" and text()="Булки"]/parent::div')
+    #Элемент для надписи Current в разделе Начинки
+    FILLINGS_CURRENT_INSCRIPTION = (By.XPATH, '//span[@class="text text_type_main-default" and text()="Начинки"]/parent::div')
+
